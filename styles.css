@@ -1,59 +1,163 @@
-color: red; /* Cor do texto em vermelho */
+/* =========================== */
+/* ======= TIPOGRAFIA ======== */
+/* =========================== */
+p { color: red; /* Cor do texto em vermelho */ } 
+________________________________________________________________________________________________
+span { font-size: 16px; /* Tamanho da fonte em pixels */ } 
+________________________________________________________________________________________________
+strong { font-weight: bold; /* Texto em negrito */ } 
+________________________________________________________________________________________________
+em { font-style: italic; /* Texto em itálico */ } 
+________________________________________________________________________________________________
+h2 { text-transform: uppercase; /* Converte texto para maiúsculas */ } 
+________________________________________________________________________________________________
+h2 { letter-spacing: 2px; /* Espaçamento entre as letras */ } 
+________________________________________________________________________________________________
+h1 { text-align: center; /* Centraliza o texto horizontalmente */ } 
+________________________________________________________________________________________________
+a { text-decoration: underline; /* Sublinha o texto */ } 
+________________________________________________________________________________________________
+h3 { text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* Sombra do texto */ } 
+________________________________________________________________________________________________
 
-background-color: #f0f0f0; /* Cor de fundo cinza claro */
+/* =========================== */
+/* ========= CORES =========== */
+/* =========================== */
+div { background-color: #f0f0f0; /* Cor de fundo cinza claro */ } 
+________________________________________________________________________________________________
+body { background: linear-gradient(to right, #ff7e5f, #feb47b); /* Fundo com gradiente */ } 
+________________________________________________________________________________________________
+.box { border-color: black; /* Cor da borda */ } 
+________________________________________________________________________________________________
 
-font-size: 16px; /* Tamanho da fonte em pixels */
+/* =========================== */
+/* ==== MARGEM & PADDING ===== */
+/* =========================== */
+section { margin: 20px; /* Espaço externo ao redor do elemento */ } 
+________________________________________________________________________________________________
+article { padding: 10px; /* Espaço interno entre conteúdo e borda */ } 
+________________________________________________________________________________________________
 
-font-weight: bold; /* Texto em negrito */
+/* =========================== */
+/* ========= BORDAS ========== */
+/* =========================== */
+.box { border: 2px solid black; /* Borda preta de 2px */ } 
+________________________________________________________________________________________________
+.card { border-radius: 8px; /* Bordas arredondadas */ } 
+________________________________________________________________________________________________
 
-font-style: italic; /* Texto em itálico */
+/* =========================== */
+/* ===== LARGURA / ALTURA ===== */
+/* =========================== */
+.container { width: 100%; /* Largura total do elemento */ } 
+________________________________________________________________________________________________
+.container { height: 200px; /* Altura fixa do elemento */ } 
+________________________________________________________________________________________________
+.container { min-width: 150px; /* Largura mínima do elemento */ } 
+________________________________________________________________________________________________
+.container { max-width: 1200px; /* Largura máxima do elemento */ } 
+________________________________________________________________________________________________
+.container { min-height: 100px; /* Altura mínima do elemento */ } 
+________________________________________________________________________________________________
+.container { max-height: 800px; /* Altura máxima do elemento */ } 
+________________________________________________________________________________________________
 
-text-align: center; /* Centraliza o texto */
+/* =========================== */
+/* ===== DISPLAY / LAYOUT ===== */
+/* =========================== */
+div { display: block; /* Elemento ocupa linha inteira */ } 
+________________________________________________________________________________________________
+span { display: inline; /* Elemento ocupa só o espaço do conteúdo */ } 
+________________________________________________________________________________________________
+.flex-box { display: flex; /* Ativa flexbox */ } 
+________________________________________________________________________________________________
+.flex-box { flex-wrap: wrap; /* Permite quebra de linha */ } 
+________________________________________________________________________________________________
+.flex-box { justify-content: center; /* Centraliza conteúdo horizontalmente */ } 
+________________________________________________________________________________________________
+.flex-box { align-items: center; /* Centraliza conteúdo verticalmente */ } 
+________________________________________________________________________________________________
+.flex-box { align-content: space-between; /* Distribui linhas de flexbox verticalmente */ } 
+________________________________________________________________________________________________
+.flex-item { flex-grow: 1; /* Permite que o item cresça */ } 
+________________________________________________________________________________________________
+.flex-item { flex-shrink: 1; /* Permite que o item encolha */ } 
+________________________________________________________________________________________________
+.flex-item { flex-basis: 200px; /* Define tamanho inicial do item */ } 
+________________________________________________________________________________________________
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: 200px 200px; grid-auto-flow: row; gap: 10px; /* Grid layout */ } 
+________________________________________________________________________________________________
+.grid-item { grid-area: 1 / 2 / 2 / 3; /* Linha 1-2, coluna 2-3 */ } 
+________________________________________________________________________________________________
 
-text-decoration: underline; /* Sublinha o texto */
+/* =========================== */
+/* ===== POSICIONAMENTO ====== */
+/* =========================== */
+.absolute-box { position: absolute; /* Livre na tela */ } 
+________________________________________________________________________________________________
+.relative-box { position: relative; /* Relativo ao local normal */ } 
+________________________________________________________________________________________________
+.fixed-box { position: fixed; /* Fixa na tela mesmo ao rolar */ } 
+________________________________________________________________________________________________
+.sticky-box { position: sticky; top: 0; /* Fixa quando rola até certo ponto */ } 
+________________________________________________________________________________________________
+.absolute-box { top: 50px; left: 100px; /* Distância do topo e esquerda */ } 
+________________________________________________________________________________________________
+.absolute-box { z-index: 10; /* Prioridade de sobreposição */ } 
+________________________________________________________________________________________________
+.container { overflow: hidden; /* Esconde conteúdo que ultrapassa limite */ } 
+________________________________________________________________________________________________
+.container { overflow-x: scroll; overflow-y: auto; /* Scroll horizontal e vertical */ } 
+________________________________________________________________________________________________
 
-margin: 20px; /* Espaço externo ao redor do elemento */
+/* =========================== */
+/* ===== SOMBRAS / OPACIDADE == */
+/* =========================== */
+.shadow-box { box-shadow: 2px 2px 10px rgba(0,0,0,0.3); /* Sombra suave */ } 
+________________________________________________________________________________________________
+.transparent-box { opacity: 0.5; /* Elemento semi-transparente */ } 
+________________________________________________________________________________________________
 
-padding: 10px; /* Espaço interno entre conteúdo e borda */
+/* =========================== */
+/* ==== TRANSIÇÕES / CURSOR ==== */
+/* =========================== */
+.button { transition: all 0.3s ease; /* Transição suave */ } 
+________________________________________________________________________________________________
+.button { cursor: pointer; /* Mãozinha ao passar mouse */ } 
+________________________________________________________________________________________________
 
-border: 2px solid black; /* Borda preta com 2px de espessura */
+/* =========================== */
+/* ==== ANIMAÇÕES / KEYFRAMES == */
+/* =========================== */
+.animated-box { animation-name: deslizar; animation-duration: 6s; animation-timing-function: linear; animation-iteration-count: 3; animation-direction: normal; /* Animação completa */ } 
+________________________________________________________________________________________________
+@keyframes deslizar { from { transform: translateX(0); } to { transform: translateX(200px); } /* Exemplo de keyframes */ } 
+________________________________________________________________________________________________
 
-border-radius: 8px; /* Arredonda os cantos da borda */
+/* =========================== */
+/* ========= LISTAS ========== */
+/* =========================== */
+ul { list-style-type: square; margin-left: 20px; /* Lista não ordenada */ } 
+________________________________________________________________________________________________
+ol { list-style-type: decimal-leading-zero; /* Lista ordenada */ } 
+________________________________________________________________________________________________
 
-width: 100%; /* Largura total do elemento */
+/* =========================== */
+/* ========= IMAGENS ========== */
+/* =========================== */
+img { width: 100%; height: auto; border-radius: 10px; object-fit: cover; /* Redimensionamento e borda arredondada */ } 
+________________________________________________________________________________________________
 
-height: 200px; /* Altura fixa de 200px */
+/* =========================== */
+/* ===== RESPONSIVIDADE ====== */
+/* =========================== */
+@media (max-width: 768px) { body { font-size: 14px; } .grid { grid-template-columns: 1fr; } } 
+________________________________________________________________________________________________
 
-display: flex; /* Usa layout flexível */
-
-justify-content: center; /* Centraliza conteúdo horizontalmente */
-
-align-items: center; /* Centraliza conteúdo verticalmente */
-
-position: absolute; /* Posicionamento livre na tela */
-
-top: 50px; /* Distância do topo */
-
-left: 100px; /* Distância da esquerda */
-
-z-index: 10; /* Prioridade de sobreposição */
-
-box-shadow: 2px 2px 10px rgba(0,0,0,0.3); /* Sombra suave ao redor do elemento */
-
-transition: all 0.3s ease; /* Transição suave para todas as propriedades */
-
-cursor: pointer; /* Cursor vira mãozinha ao passar o mouse */
-
-opacity: 0.5; /* Elemento semi-transparente */
-
-overflow: hidden; /* Esconde conteúdo que ultrapassa o limite */
-
-animation-name: deslizar; /* Nome da animação */
-
-animation-duration: 6s; /* Duração da animação */
-
-animation-timing-function: linear; /* Velocidade constante */
-
-animation-iteration-count: 3; /* Repetir 3 vezes */
-
-animation-direction: normal; /* Direção padrão da animação */
+/* =========================== */
+/* ===== FILTROS / CLIP ====== */
+/* =========================== */
+img { filter: grayscale(50%); /* Filtro de imagem */ } 
+________________________________________________________________________________________________
+.clip-box { clip-path: circle(50% at 50% 50%); /* Recorta elemento em forma de círculo */ } 
+________________________________________________________________________________________________
