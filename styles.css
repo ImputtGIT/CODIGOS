@@ -1,0 +1,30 @@
+color: red; /* Cor do texto em vermelho */
+background-color: #f0f0f0; /* Cor de fundo cinza claro */
+font-size: 16px; /* Tamanho da fonte em pixels */
+font-weight: bold; /* Texto em negrito */
+font-style: italic; /* Texto em itálico */
+text-align: center; /* Centraliza o texto */
+text-decoration: underline; /* Sublinha o texto */
+margin: 20px; /* Espaço externo ao redor do elemento */
+padding: 10px; /* Espaço interno entre conteúdo e borda */
+border: 2px solid black; /* Borda preta com 2px de espessura */
+border-radius: 8px; /* Arredonda os cantos da borda */
+width: 100%; /* Largura total do elemento */
+height: 200px; /* Altura fixa de 200px */
+display: flex; /* Usa layout flexível */
+justify-content: center; /* Centraliza conteúdo horizontalmente */
+align-items: center; /* Centraliza conteúdo verticalmente */
+position: absolute; /* Posicionamento livre na tela */
+top: 50px; /* Distância do topo */
+left: 100px; /* Distância da esquerda */
+z-index: 10; /* Prioridade de sobreposição */
+box-shadow: 2px 2px 10px rgba(0,0,0,0.3); /* Sombra suave ao redor do elemento */
+transition: all 0.3s ease; /* Transição suave para todas as propriedades */
+cursor: pointer; /* Cursor vira mãozinha ao passar o mouse */
+opacity: 0.5; /* Elemento semi-transparente */
+overflow: hidden; /* Esconde conteúdo que ultrapassa o limite */
+animation-name: deslizar; /* Nome da animação */
+animation-duration: 6s; /* Duração da animação */
+animation-timing-function: linear; /* Velocidade constante */
+animation-iteration-count: 3; /* Repetir 3 vezes */
+animation-direction: normal; /* Direção padrão da animação */
